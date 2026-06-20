@@ -1,0 +1,34 @@
+{
+    "name": "zerofyi/laracontext",
+    "description": "Generate high-density architectural context maps of Laravel applications for AI models.",
+    "keywords": ["laravel", "ai", "llm", "context", "prompt"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Nahid Hassan",
+            "email": "nahid@zerofyi.in",
+            "homepage": "https://github.com/zerofyi",
+            "role": "Creator"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/console": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zerofyi\\LaraContext\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zerofyi\\LaraContext\\LaraContextServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
